@@ -581,7 +581,8 @@ footer .socialIcons li{
     height:40px;
 font-size:20px;
 }
-.socialIcons li i{
+
+footer .socialIcons li i{
     line-height: 38px;;
 }
 .followME{
@@ -589,6 +590,9 @@ font-size:20px;
     margin-top:20px;
     display: block;
     text-align: center;
+}
+.bookImg{
+    width:100%;
 }
 .copyRights{
     margin-top:60px;
@@ -611,9 +615,6 @@ font-size:20px;
         padding:20px 0;
     }
 
-
-    .iphoneImg{
-display: none;    }
     
     .navbar-expand-lg .navbar-nav .nav-link:before{
         display:none;
@@ -640,19 +641,7 @@ display: none;    }
 .heroBG{
     display: none;
 }
-.appBtn{
-    width:150px;
-}
-.adv {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.sectionTitle{
-    margin-bottom: 50px;
-}
-.subscribe::before{
-    display: none;
-}
+
 .halfFormGroup{
     width: 100%;
 }
@@ -670,7 +659,7 @@ display: none;    }
         cursor: pointer;
         border-radius: 0;
         opacity: .7;
-        border:1px solid var(--gradient-color1);;
+        border:1px solid var(--font-color);;
         text-align: center;
     }
 
@@ -680,7 +669,7 @@ display: none;    }
   }
  
     .mobileMenu i{
-        background-color: var(--gradient-color1);
+        background-color: var(--font-color);
         border-radius: 2px;
         content: '';
         display: block;
@@ -704,49 +693,76 @@ display: none;    }
         width:100%;
         margin-top:20px;
     }
-    .appBtn.sendBtn{
-        width:100%;
-        float: none;
-    }
 
-    .subscribeBox .subscribeBtn{
-        width: 100% ;
-        float: none;
-    }
+
     .contactForm {
         margin-top:20px;
     }
+    .heroContent:before {
+        display:none
+    }
+    .bookBox {
+        height: auto;
+        padding:10px;
+        margin-bottom:20px;
+    }
+    .bookImg{
+        height:400px;
+        width:100%;
+    }
+    .bookImg img{
+        width:100%;
+        height: auto;
+    }
+    .bookDetails{
+        width:100%;
+        padding:20px;
+    }
+    .circle2 {
+        width: 198px;
+        height: 200px;}
+        .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+            right:25%;
+        }
+        .owl-carousel .owl-nav button.owl-next {
+            right: auto;
+            left: 25%;
+        }
+        .contact{
+            padding:20px 0;
+        }
+
+        .copyRights{
+            text-align: center;
+        }
+        .quotation{
+            padding:20px 0
+        }
+        .bookSlider{
+            margin-right:0;
+            margin-top: 20px;;
+        }
+      
+
 }
 
 @media(min-width:768px) and (max-width:1023px){
+    .heroContent:before{
+        left:-4%;
+    }
     body{
         font-size:14px
     }
-    .appBtn{
-        width:140px;
-    }
-    .iphoneImg{
-        width:220px;
-    }
+
     
     .halfFormGroup {
         width: 46%;}
-        .heroBG{
-            width:48%;
-        }
-.adv {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+
 header{
     padding:0;
 }
-.services{
-    padding:50px 0
-}
-.servicesBox{
-    margin-bottom:20px;
-}
+
+
 footer{
     padding:20px 0;
 }
@@ -756,16 +772,10 @@ footer{
 .navbar-brand.logo{
     width:120px;
 }
-
-
     .hero{
         padding:20px 0;
     }
   
-
-  .marginBox{
-      margin-top:0;
-  }
     .heroText{
         padding-top: 20px;
         padding-bottom:50px
@@ -796,7 +806,45 @@ footer{
 .footer{
     padding-top:50px;
 }
-.work{
-    padding:50px 0;
+
+.owl-carousel .owl-stage-outer{
+    overflow: hidden;
+}
+
+.circle1{
+    left: -9%;
+    top: -13%;
+}
+.circle2.circle1{
+top:auto
+}
+.about{
+    padding:20px 0;
+}
+.halfFormGroup {
+    width: 47.7%;
+}
+.bookImg{
+    width:48%;
+}
+.bookSlider{
+    margin-right:0;
+    margin-top: 20px;;
 }
 }
+@media(min-width:1024) and (max-width:1300px){
+    .owl-carousel .owl-stage-outer{
+        overflow: hidden;
+    }
+    .heroContent:before{
+        left:-5%
+    }
+    .heroText p{
+        margin-bottom: 20px;;
+    }
+    .bookBox {
+        height:420px;
+    }
+    .halfFormGroup {
+        width: 48.7%;}
+    }
