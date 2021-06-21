@@ -418,6 +418,7 @@ font-size: 1.1111111111111112em;
 }
 .blog{
     padding:150px 0;
+    overflow: hidden;
 }
 .blogslider{
     margin-top:50px;
@@ -431,7 +432,7 @@ font-size: 1.1111111111111112em;
 }
 
 .owl-carousel .owl-stage-outer{
-    overflow: visible;
+    overflow: initial;
 }
  .owl-item {
     opacity: 0;
@@ -460,6 +461,7 @@ font-size: 1.1111111111111112em;
 }
 .quotation{
     padding:100px 0  190px;
+    overflow: hidden;
 }
 .quotationBox {
     background-color:rgba(255,255,255,.8);
@@ -480,7 +482,8 @@ font-size: 1.1111111111111112em;
 }
 .opinion{
     padding:80px 0 130px;
-    background-color: white;;
+    background-color: white;
+    overflow: hidden;
 }
 .opinionSlider{
     margin-top:100px;
