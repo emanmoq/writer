@@ -113,6 +113,10 @@ margin-bottom:160px;
 }
 .heroContent{
     position: relative;
+    width:60%;
+    position: absolute;
+    left:0;
+    top:150px;
 }
 .heroImg img{
     width:auto;
