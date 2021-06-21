@@ -57,6 +57,7 @@ jQuery(function ($) {
     rtl:true,
     nav:true,
     dots:true,
+    
 
     responsive: {
       0: {
@@ -122,8 +123,7 @@ jQuery(function ($) {
     dots:true,
   });
   $('.opinionSlider').owlCarousel({
-    autoplay: true,
-    loop: true,
+    autoplay: false,
     rtl:true,
     nav:false,
     dots:false,
@@ -133,7 +133,6 @@ jQuery(function ($) {
     // declare rating 
     $(".my-rating").starRating({
       starSize: 16,
-      rtl: true,
       activeColor: '#FFAE01',
       hoverColor: '#F9D674',
       ratedColor: '##FFAE01',
