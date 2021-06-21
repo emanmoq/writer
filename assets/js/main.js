@@ -7,7 +7,7 @@ jQuery(function ($) {
 		$('.navbar-collapse .nav-item a[href^="#"').each(function () {
 			console.log($(this).attr('href')); 
 		  var refElement = $($(this).attr("href"));
-		  if (refElement.length&&refElement.position().top <= scrollPosition) {
+		  if (refElement.length&&refElement.position().top -50 <= scrollPosition) {
 			$('.navbar-collapse .nav-item ').removeClass("active");
 			$(this).parent().addClass("active");
 		  }
@@ -20,10 +20,10 @@ jQuery(function ($) {
     $(document).on("scroll", onScroll);
 //animate to section when click
     $('.navbar-collapse ul li a').on('click', function () {
-      $('html, body').animate({ scrollTop: $(this.hash).offset().top-5 }, 1000);
+
+      $('html, body').animate({ scrollTop: $(this.hash).position().top-5 }, 1000);
       $('.navbar-collapse.collapse.in').removeClass('in');
-      $('.navbar-collapse .nav-item ').removeClass("active");
-			$(this).parent().addClass("active");
+ 
       return false;
     });
         // add fix navbar when scroll down and remove it on top 
